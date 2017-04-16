@@ -23,6 +23,8 @@ Les limites d'une base de données orientées document sont :
 - Une base de données NoSQL n'utilise pas les propriétés ACID 
  (atomicité, cohérence, isolation et durabilité).
 
+-Les bases de données orientées document sont pas transactionnelles c’est-à-dire elles nous permettent pas de gérer  les données en production en temps réel.
+
 Les problèmes rencontrés avec MongoDb: Insérer des documents dépassant les 16 mo de limite.
 La taille est limitée pour faire le stockage d'un gros nombre de données dans les documents.
 La taille du document augmente très rapidement.
@@ -44,16 +46,16 @@ La force caractéristique de Redis consiste à stocker les données en mémoire 
  	- sets triés
 
 ## Types de requetes
-	-SET: ca permet de stocer l'information d'une facon permanente.
-	-GET: ca permet de récupérer un résultat précis.
-	-DEL: ca permet de supprimer la clé et sa valeur associée.
+	-SET:  permet de stocker l'information d'une facon permanente.
+	-GET: permet de récupérer un résultat précis.
+	-DEL:  permet de supprimer la clé et sa valeur associée.
 	-RPUSH: Met une nouvelle valeur dans la queue de la liste.
 	-LPUSH: Met une nouvelle valeur dans le début de la liste.
 	-LLEN: Retourne la longueur de la liste.
 	-LRANGE: Renvoie un sous ensemble de la liste.
 	-LPOP: Supprime le premier élément de la liste.
 	-RPOP: Supprime le dernier élément de la liste.
-	-SAAD: Ajoute la valeur courante à la liste.
+	-SAAD: Ajouter la valeur courante à la liste.
 	-SREM: Supprime une valeur donnée de la liste.
 	
  	 
